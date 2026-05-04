@@ -1,5 +1,5 @@
 @props([
-'title' => 'Laracasts'
+'title' => 'Ideas'
 ])
 
 <!DOCTYPE html>
