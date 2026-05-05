@@ -3,9 +3,11 @@
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\SessionController;
 use App\Http\Controllers\IdeaController;
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 
+Route::get("/", function() {
+    return 'Welcome';
+});
 Route::middleware("auth")->group(function () {
     Route::get('/ideas', [IdeaController::class, 'index']);
     Route::get('/ideas/create', [IdeaController::class, 'create']);
